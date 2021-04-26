@@ -1,9 +1,9 @@
-// Copyright 2017 Sebastian Pancratz, Jean-Pierre Flori, Edgar Costa
-// See LICENSE file for license details.
+/* Copyright 2017 Sebastian Pancratz, Jean-Pierre Flori, Edgar Costa */
+/* See LICENSE file for license details. */
 #include <stdlib.h>
 #include <limits.h>
 #include <time.h>
-#include <mpir.h>
+#include <gmp.h>
 
 #include "gmconnection.h"
 #include "diagfrob.h"

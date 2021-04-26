@@ -9,7 +9,7 @@
 
 #include <stdlib.h>
 
-#include <mpir.h>
+#include <gmp.h>
 #include "flint/flint.h"
 #include "flint/fmpz.h"
 #include "flint/fmpz_poly.h"
