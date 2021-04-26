@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <mpir.h>
+#include <gmp.h>
 
 #include "flint/flint.h"
 #include "flint/long_extras.h"
