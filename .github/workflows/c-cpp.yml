@@ -19,7 +19,7 @@ jobs:
          sudo apt-get -y install wget libgmp-dev # libflint-dev
          wget https://www.flintlib.org/flint-2.7.1.tar.gz
          tar xf flint-2.7.1.tar.gz
-         cd flint*
+         cd flint-2.7.1
          ./configure
          make
          sudo make install
