@@ -140,7 +140,7 @@ void fmpz_mat_charpoly_modular(fmpz_poly_t rop, const fmpz_mat_t op)
             nmod_poly_init(poly, p);
 
             fmpz_mat_get_nmod_mat(mat, op);
-            nmod_mat_charpoly(poly, mat);
+            de_nmod_mat_charpoly(poly, mat);
 
             fmpz_poly_CRT_ui(rop, rop, m, poly, 1);
 

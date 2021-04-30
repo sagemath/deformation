@@ -24,7 +24,7 @@ int main(void)
 
         nmod_mat_init(A, 0, 0, mod);
         nmod_poly_init(f, mod);
-        nmod_mat_charpoly(f, A);
+        de_nmod_mat_charpoly(f, A);
 
         result = (f->length == 1) && (f->coeffs[0] == 1);
         if (!result)
@@ -55,7 +55,7 @@ int main(void)
         nmod_mat_randtest(A, state);
 
         nmod_poly_init(f, mod);
-        nmod_mat_charpoly(f, A);
+        de_nmod_mat_charpoly(f, A);
         tr = nmod_mat_trace(A);
         tr = n_negmod(tr, mod);
 
