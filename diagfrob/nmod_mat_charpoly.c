@@ -6,7 +6,7 @@
 
 #include "diagfrob.h"
 
-void de_nmod_mat_charpoly(nmod_poly_t rop, const nmod_mat_t op)
+void nmod_mat_charpoly(nmod_poly_t rop, const nmod_mat_t op)
 
 {
     const long n = op->r;
