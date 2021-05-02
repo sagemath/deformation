@@ -65,6 +65,7 @@ main(void)
         free(y);
     }
 
+    ctx_clear(ctx);
     _randclear(state);
     _fmpz_cleanup();
     printf("PASS\n");
