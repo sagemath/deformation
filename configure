@@ -618,7 +618,7 @@ fi
 for LIB in ${EXTRA_LIBS} ${LIBS}; do
    lLIBS2="-l${LIB} ${lLIBS2}"
 done
-lLIBS="-ldeformation $lLIBS2"
+lLIBS="$lLIBS2 -ldeformation"
 LIBS2="$LLIBS $lLIBS2"
 LIBS="$LLIBS $lLIBS"
 
