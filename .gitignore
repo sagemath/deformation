@@ -1,4 +1,9 @@
 *.o
+*.a
 *.lo
 *.so
+*.so.*
+Makefile
+*.swp
+build/
 
