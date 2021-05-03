@@ -98,6 +98,7 @@ main(void)
         mat_clear(B, ctx);
         mat_clear(C, ctx);
         mat_clear(D, ctx);
+        mat_clear(I, ctx);
         ctx_clear(ctx);
     }
 

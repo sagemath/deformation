@@ -245,7 +245,7 @@ INC_DIRS="${INC_DIRS} ${MPFR_INC_DIR}"
 LIBS="${LIBS} mpfr"
 
 if [ -d "${FLINT_DIR}/lib" ]; then
-   FLINT_LIB_DIR="${FLINT_DIR}/lib"
+   FLINT_LIB_DIR="${FLINT_DIR}/lib64"
    FLINT_INC_DIR="${FLINT_DIR}/include"
 elif [ -d "${FLINT_DIR}/lib64" ]; then
    FLINT_LIB_DIR="${FLINT_DIR}/lib64"
@@ -618,7 +618,7 @@ fi
 for LIB in ${EXTRA_LIBS} ${LIBS}; do
    lLIBS2="-l${LIB} ${lLIBS2}"
 done
-lLIBS="-ldeformation $lLIBS2"
+lLIBS="$lLIBS2 -ldeformation"
 LIBS2="$LLIBS $lLIBS2"
 LIBS="$LLIBS $lLIBS"
 
