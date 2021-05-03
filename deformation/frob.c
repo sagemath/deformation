@@ -675,7 +675,7 @@ void frob_ret(fmpz_poly_t cp,
         if (prec->denR == NULL)
         {
             fmpz_mod_poly_t _t;
-	    ctx_t ctx;
+	          ctx_t ctx;
 
             fmpz_mod_ctx_init(ctx, pN);
             fmpz_mod_poly_init(_t, pN);
