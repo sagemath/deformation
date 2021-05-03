@@ -677,12 +677,13 @@ void frob_ret(fmpz_poly_t cp,
             fmpz_mod_poly_t _t;
 	    ctx_t ctx;
 
-	    fmpz_mod_ctx_init(ctx, pN);
+            fmpz_mod_ctx_init(ctx, pN);
             fmpz_mod_poly_init(_t, pN);
             fmpz_mod_poly_set_fmpz_poly(_t, r, ctx);
             fmpz_mod_poly_pow(_t, _t, prec->m, ctx);
             fmpz_mod_poly_get_fmpz_poly(t, _t, ctx);
             fmpz_mod_poly_clear(_t, ctx);
+            fmpz_mod_ctx_clear(ctx);
         }
         else
         {
