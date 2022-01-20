@@ -1,5 +1,7 @@
 # Deformation
-An implementation of the deformation algorithm for point counting in smooth projective families of hypersurfaces over finite fields
+An implementation of the deformation algorithm for point counting in smooth projective families of hypersurfaces over finite fields,
+see e.g. [Pancratz-Tuitman 2015](https://doi.org/10.1007/s10208-014-9242-8).
+
 
 Implemented by Sebastian Pancratz.
 
